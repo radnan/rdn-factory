@@ -1,7 +1,7 @@
 {
 	"name": "radnan/rdn-factory",
-	"description": "",
-	"keywords": [""],
+	"description": "Zend Framework 2 module to help create factory classes",
+	"keywords": ["zf2", "zend", "factory", "plugins"],
 	"license": "MIT",
 	"authors": [
 		{
