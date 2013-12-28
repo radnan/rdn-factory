@@ -5,7 +5,24 @@ The **RdnFactory** ZF2 module makes it really easy to create factory classes.
 
 ## How to install
 
-This module is still under development.
+1. Use `composer` to require the `radnan/rdn-factory` package:
+
+   ~~~bash
+   $ composer require radnan/rdn-factory:1.*
+   ~~~
+
+2. Activate the module by including it in your `application.config.php` file:
+
+   ~~~php
+   <?php
+
+   return array(
+       'modules' => array(
+           'RdnFactory',
+           // ...
+       ),
+   );
+   ~~~
 
 ## How to use
 
