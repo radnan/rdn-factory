@@ -15,6 +15,12 @@ class Controller extends AbstractPlugin
 	 */
 	public function __invoke($name)
 	{
-		return $this->factory->service('ControllerLoader')->get($name);
+        $controller = $this->factory->service('ControllerLoader')->get($name);
+
+        if ($controller instanceof InjectApplicationEventInterface) {
+            $controller->setEvent($this->factory->service('Application')->getMvcEvent());
+        }
+
+        return $controller;
 	}
 }
