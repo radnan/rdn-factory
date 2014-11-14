@@ -2,6 +2,7 @@
 
 namespace RdnFactory\Plugin;
 
+use Zend\Mvc\InjectApplicationEventInterface;
 use Zend\Stdlib\DispatchableInterface;
 
 class Controller extends AbstractPlugin
